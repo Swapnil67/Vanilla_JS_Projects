@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./sass/main.css">
+    <title>Speed Typer</title>
+</head>
+<body>
+    <button id="settings-btn" class="settings-btn">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+    </button>
+
+    <div class="settings" id="settings">
+        <form action="#" class="setting-form" id="setting-form">
+            <div>
+                <label class="settings-text" for="difficulty">Difficulty</label>
+                <select class="settings-select" id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="container">
+        <h2 class="container-title">👩‍💻 Speed Typer 👨‍💻</h2>
+        <small class="container-small">Type the  following: </small>
+        <h1 class="container-word" id="word"></h1>
+        <input class="container-input" type="text" id="text" autocomplete="off" placeholder="Type the word here...">
+        <p class="container-time">
+            Time left: <span id="time">10s</span>
+        </p>
+        
+        <p class="container-score">
+            Score: <span id="score">0</span>
+        </p>
+
+        <div id="end-game-container" class="container-end-game"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
